@@ -1,11 +1,11 @@
 package main
 
 import (
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/middleware/logger"
-	"github.com/kataras/iris/middleware/recover"
+	"github.com/kataras/iris/v12"
+	"github.com/kataras/iris/v12/middleware/logger"
+	"github.com/kataras/iris/v12/middleware/recover"
 
-	"github.com/nu7hatch/gouuid"
+	uuid "github.com/nu7hatch/gouuid"
 	"github.com/olebedev/config"
 )
 
@@ -83,7 +83,7 @@ func NewApp(opts ...AppOptions) *App {
 	}
 
 	// Serve static via bindata
-	srv.StaticEmbedded("/static", "./data/static", Asset, AssetNames)
+	srv.HandleDir("/static", "./data/static", iris.DirOptions{Asset: Asset, AssetNames: AssetNames})
 
 	// Request Logger with columns
 	srv.Use(logger.New(logger.Config{
@@ -121,7 +121,6 @@ func NewApp(opts ...AppOptions) *App {
 func (app *App) Run() {
 	Must(app.Server.Run(
 		iris.Addr(":"+app.Conf.UString("port")),
-		iris.WithoutVersionChecker,
 		iris.WithoutServerError(iris.ErrServerClosed)))
 }
 

@@ -10,7 +10,7 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/kataras/iris"
+	"github.com/kataras/iris/v12"
 
 	"github.com/dop251/goja"
 	"github.com/dop251/goja_nodejs/eventloop"

@@ -10,7 +10,7 @@ This project contains a quick starter kit for **Facebook React** Single Page App
 * server side redirect
 * embedding static files into artefact via bindata
 * highest performance [iris](https://github.com/kataras/iris) framework
-* advanced cli via [cli](https://github.com/codegangsta/cli)
+* advanced cli via [cli](https://github.com/urfave/cli)
 * routing via [react-router](https://github.com/reactjs/react-router)
 * ES6 & JSX via [babel-loader](https://github.com/babel/babel-loader) with minimal runtime dependency footprint
 * [redux](https://rackt.org/redux/) as state container

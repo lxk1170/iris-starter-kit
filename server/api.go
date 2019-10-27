@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/kataras/iris"
+	"github.com/kataras/iris/v12"
 )
 
 // API is a defined as struct bundle
@@ -22,7 +22,7 @@ func NewAPI(app *App) *API {
 //
 // Don't ask me, I found that code from the original repository,
 // look my examples at
-// github.com/kataras/iris/tree/master/_examples/structuring for folder structuring and organization instead.
+// github.com/kataras/iris/tree/v12/_examples/structuring for folder structuring and organization instead.
 //
 // END NOTE
 
