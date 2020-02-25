@@ -1,3 +1,5 @@
 /node_modules
 /server/bindata.go
 /server/data/static/build
+/server/bin
+/server/.serverless
