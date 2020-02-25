@@ -3,6 +3,8 @@ module github.com/iris-contrib/iris-starter-kit/server
 go 1.13
 
 require (
+	github.com/aws/aws-lambda-go v1.14.0 // indirect
+	github.com/awslabs/aws-lambda-go-api-proxy v0.6.0 // indirect
 	github.com/dlclark/regexp2 v1.2.0 // indirect
 	github.com/dop251/goja v0.0.0-20190912223329-aa89e6a4c733
 	github.com/dop251/goja_nodejs v0.0.0-20171011081505-adff31b136e6
