@@ -100,5 +100,7 @@
   },
   "main": "index.js",
   "repository": "git@github.com:kataras/iris-starter-kit.git",
-  "devDependencies": {}
+  "devDependencies": {
+    "webpack-cli": "^3.3.11"
+  }
 }
