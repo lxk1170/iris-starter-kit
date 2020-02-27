@@ -50,6 +50,7 @@ package:
    - ./**
  include:
    - ./bin/**
+   - ./data/**
 
 functions:
   main:
