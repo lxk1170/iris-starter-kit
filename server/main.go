@@ -1,16 +1,14 @@
 package main
 
-import (
-	"os"
-
-	"github.com/urfave/cli"
-)
-
 func main() {
 	// defer profile.Start(profile.CPUProfile, profile.ProfilePath(".")).Stop()
-	Run(os.Args)
+	//Run(os.Args)
+
+	app := NewApp(AppOptions{})
+	app.Run()
 }
 
+/*
 // Run creates, configures and runs
 // main cli.App
 func Run(args []string) {
@@ -36,3 +34,4 @@ func RunServer(c *cli.Context) {
 	})
 	app.Run()
 }
+*/
