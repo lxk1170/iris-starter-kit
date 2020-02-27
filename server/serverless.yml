@@ -21,7 +21,6 @@ provider:
   name: aws
   runtime: go1.x
   region: us-east-1
-  profile: Sandbox
 # you can overwrite defaults here
 #  stage: dev
 #  region: us-east-1
